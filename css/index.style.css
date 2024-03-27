@@ -32,9 +32,11 @@ body {
   background-color: hsl(217, 19%, 24%);
 }
 
+#advice {
+  width: 19rem;
+  height: 11rem;
+}
 .adDiv {
-  width: 100%;
-  height: 100%;
   padding: 20px 30px;
   font-weight: 800;
   color: hsl(193, 38%, 86%);
