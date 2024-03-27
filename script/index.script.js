@@ -4,7 +4,7 @@ window.onload = function () {
   const adviceHeadingEl = document.getElementById("heading");
   const displayAdvice = function (advice) {
     adviceHeadingEl.textContent = advice.slip.id;
-    adviceDiv.innerHTML = '"' + advice.slip.advice + '"';
+    adviceDiv.textContent = '"' + advice.slip.advice + '"';
     adviceDiv.classList.add("adDiv");
   };
 
