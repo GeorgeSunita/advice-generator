@@ -5,7 +5,6 @@ window.onload = function () {
   const displayAdvice = function (advice) {
     adviceHeadingEl.textContent = advice.slip.id;
     adviceDiv.innerHTML = `&quot ${advice.slip.advice} &quot`;
-    adviceDiv.classList.add("adDiv");
   };
 
   adviceBtn.addEventListener("click", function (e) {
