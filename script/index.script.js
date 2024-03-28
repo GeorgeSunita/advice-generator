@@ -1,14 +1,14 @@
 window.onload = function () {
-  const adviceDiv = document.getElementById("advice");
-  const formEl = document.getElementById("submit");
-  const adviceHeadingEl = document.getElementById("heading");
+  const adviceDiv = document.querySelector("#advice");
+  const adviceBtn = document.querySelector("#getAdviceBtn");
+  const adviceHeadingEl = document.querySelector("#heading");
   const displayAdvice = function (advice) {
     adviceHeadingEl.textContent = advice.slip.id;
-    adviceDiv.innerHTML = `"<p>${advice.slip.advice}</p>"`;
+    adviceDiv.innerHTML = `&quot ${advice.slip.advice} &quot`;
     adviceDiv.classList.add("adDiv");
   };
 
-  formEl.addEventListener("submit", function (e) {
+  adviceBtn.addEventListener("click", function (e) {
     e.preventDefault();
 
     fetch("https://api.adviceslip.com/advice")
